@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Weekly S&amp;P Stock Market Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="R%20%20Weekly%20S&amp;P%20Stock%20Market%20Data_files/R.css">
+<link rel="stylesheet" type="text/css" id="SL_Style" href="R%20%20Weekly%20S&amp;P%20Stock%20Market%20Data_files/translator.css"></head><body>
+
+<table summary="page for Weekly {ISLR}" width="100%"><tbody><tr><td>Weekly {ISLR}</td><td style="text-align: right;">R Documentation</td></tr></tbody></table>
+
+<h2>Weekly S&amp;P Stock Market Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>Weekly percentage returns for the S&amp;P 500 stock index
+between 1990 and 2010. 
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Weekly</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1089 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>Year</code></dt><dd><p>The year that the observation was recorded</p>
+</dd>
+<dt><code>Lag1</code></dt><dd><p>Percentage return for previous week</p>
+</dd>
+<dt><code>Lag2</code></dt><dd><p>Percentage return for 2 weeks previous</p>
+</dd>
+<dt><code>Lag3</code></dt><dd><p>Percentage return for 3 weeks previous</p>
+</dd>
+<dt><code>Lag4</code></dt><dd><p>Percentage return for 4 weeks previous</p>
+</dd>
+<dt><code>Lag5</code></dt><dd><p>Percentage return for 5 weeks previous</p>
+</dd>
+<dt><code>Volume</code></dt><dd><p>Volume of shares traded (average number of daily shares
+traded in billions)</p>
+</dd>
+<dt><code>Today</code></dt><dd><p>Percentage return for this week</p>
+</dd>
+<dt><code>Direction</code></dt><dd><p>A factor with levels <code>Down</code> and
+<code>Up</code> indicating whether the market had a positive or negative
+return on a given week</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Raw values of the S&amp;P 500 were obtained from Yahoo Finance and
+then converted to percentages and lagged.
+
+</p>
+
+
+<h3>References</h3>
+
+<p>Games, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="http://127.0.0.1:12032/library/ISLR/html/www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>summary(Weekly)
+lm(Today~Lag1+Lag2,data=Weekly)
+</pre>
+
+<hr><div style="text-align: center;">[Package <em>ISLR</em> version 1.0 <a href="http://127.0.0.1:12032/library/ISLR/html/00Index.html">Index</a>]</div>
+<div id="SL_balloon_obj" style="display: none;"><div id="SL_button" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; position: absolute; cursor: pointer;"></div><div id="SL_shadow_translation_result2" style="display: none;"></div><div id="SL_shadow_translator"><div id="SL_providers"><div class="SL_BL_LABLE_ON" title="Google" id="SL_P0">G</div><div class="SL_BL_LABLE_ON" title="Microsoft" id="SL_P1">M</div><div class="SL_BL_LABLE_ON" title="Translator" id="SL_P2">T</div></div><div id="SL_planshet" style="background: rgb(244, 245, 245) url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;"><div id="SL_arrow_up"></div><div id="SL_TB"><div id="bubblelogo" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/imtranslator-s.png&quot;) repeat scroll 0% 0%; display: block; width: 24px; height: 24px; position: absolute;"></div><table id="SL_tables"><tr><td width="10%" align="right"><input id="SLloc" title="Lock-in language" type="checkbox"></td><td width="20%" align="left"><select id="SL_lng_from"><option value="auto" selected="selected">Detect language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td width="5%" align="center"><div id="SL_switch_b" title="Switch languages" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/switchb.png&quot;) repeat scroll 0% 0%; display: block; width: 10px; height: 10px; cursor: pointer;" align="center"></div></td><td width="20%" align="left"><select id="SL_lng_to"><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en">English</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru" selected="selected">Russian</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></td><td width="5%" align="center"> </td><td width="6%" align="center"><div id="SL_TTS_voice" title="Listen" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/tts-voice.png&quot;) repeat scroll 0% 0%;"></div></td><td width="6%" align="center"><div id="SL_copy" title="Copy translation" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/copy_hand.png&quot;) repeat scroll 0% 0%;"></div></td><td width="6%" align="center"><div id="SL_bbl_font_patch" title="This function is disabled in Dictionary mode"></div><div id="SL_bbl_font" title="Font size" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/font-off.png&quot;) repeat scroll 0% 0%;"></div></td><td width="6%" align="center"><div id="SL_TH" title="Translation History" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/history.png&quot;) repeat scroll 0% 0%;"></div></td><td width="10%"></td><td width="6%" align="right"><div id="SL_pin" title="Pin pop-up bubble" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/pin-off.png&quot;) repeat scroll 0% 0%; display: block; width: 16px; height: 16px; cursor: pointer;"></div></td></tr></table></div><div id="SL_alert_bbl"><div id="SLHKclose"></div><div id="SL_alert_cont"></div></div></div><div id="SL_shadow_translation_result" style="background: rgb(255, 255, 255) url(&quot;chrome://imtranslator/content/img/util/bg.png&quot;) repeat scroll 0% 0%;"></div><div id="SL_loading" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/indicator.gif&quot;) repeat scroll 0% 0%; display: block; position: absolute; width: 35px; margin-left: 180px; margin-top: -40px; height: 35px;"></div><div id="SL_player2"></div><div id="SL_alert100" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/bg2.png&quot;) repeat scroll 0% 0%;">Text-to-speech function is limited to 100 characters</div><div id="SL_Balloon_options" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"><div id="SL_arrow_down"></div><table width="100%"><tr><td width="18%" align="left" height="16"><div id="SL_bbl_donate" title="Make a small conribution" style="background: transparent url(&quot;chrome://imtranslator/content/img/util/donate2.png&quot;) repeat scroll 0% 0%;"></div></td><td width="68%" align="center"><a href="#" id="OPlnk" title="Show options">Options</a> : <a href="#" id="HISTlnk" title="Translation History">History</a> : <a href="http://about.imtranslator.net/tutorials/presentations/imtranslator-translator-for-firefox/popup-bubble-application/" target="_blank" id="HELPlnk" title="Help">Help</a> : <a href="#" id="FBlnk" title="Feedback">Feedback</a></td><td width="15%" align="right"><a id="SL_Balloon_Close" href="#" title="Close">Close</a></td></tr></table></div></div></div></body></html>
